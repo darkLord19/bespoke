@@ -1,0 +1,340 @@
+@font-face {
+  font-family: "Sora";
+  src: url("../fonts/Sora/Sora-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../fonts/Sofia/Sofia-Regular.ttf") format("truetype");
+}
+
+@sm: ~"(min-width: 575.98px)";
+@md: ~"(min-width: 768.98px)";
+@lg: ~"(min-width: 991.98px)";
+@xl: ~"(min-width: 1199.98px)";
+
+@body-color: #a5a5a5;
+@primary-color: #4a40a1;
+
+body {
+  font-family: "Sora";
+  background-color: #ffffff;
+}
+
+br {
+  display: inline-block;
+}
+
+.header {
+  background-color: @primary-color;
+  color: white;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 9;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .links-container {
+      display: flex;
+    }
+    a {
+      color: #c2bdf7;
+      padding: 10px;
+      @media @md {
+        padding: 20px 32px;
+      }
+      text-decoration: none;
+    }
+  }
+}
+
+.banner-section {
+  position: relative;
+  .mobile-top {
+    height: 560px;
+    background-color: @primary-color;
+  }
+  .banner {
+    width: 100%;
+    top: 0px;
+    height: auto;
+  }
+  .content {
+    position: absolute;
+    top: 160px;
+    z-index: 1;
+    .headline {
+      font-family: "Sofia";
+      font-size: 54px;
+      @media @md {
+        font-size: 68px;
+      }
+      line-height: 118px;
+      color: white;
+      margin-bottom: 24px;
+      @media @md {
+        margin-bottom: 32px;
+      }
+    }
+    .description {
+      b {
+        color: white;
+      }
+      color: #c2bdf7;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+.section-heading {
+  text-align: center;
+  .heading {
+    font-family: "Sofia";
+    color: @primary-color;
+    font-size: 44px;
+    @media @md {
+      font-size: 56px;
+    }
+    line-height: 98px;
+  }
+  .subline {
+    color: @body-color;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.offer-section {
+  .hero-image-container {
+    height: 600px;
+    background-image: url("../assets/hero-image.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 12%;
+  }
+  .section-heading {
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    display: inline-block;
+    text-align: left;
+    max-width: 360px;
+    padding-left: 10px;
+    @media @sm {
+      padding-left: 0px;
+      max-width: 475px;
+    }
+  }
+  .container {
+    position: relative;
+    padding-bottom: 100px;
+  }
+  .banner-tagline {
+    color: @primary-color;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 24px;
+  }
+}
+
+.brands-section {
+  .brand-title {
+    width: 375px;
+    min-width: 375px;
+  }
+  .clients-container {
+    margin-top: 40px;
+    @media @md {
+      margin-top: 0;
+    }
+    .col {
+      padding: 8px !important;
+    }
+    .client {
+      height: 132px;
+      background: #ffffff;
+      box-shadow: 0px 15px 36px rgba(74, 64, 161, 0.09);
+      border-radius: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .image {
+        max-width: 90%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.explore-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .items-container {
+    .item-container {
+      margin-top: 62px;
+      height: 180px;
+      @media @md {
+        height: 260px;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media @lg {
+        justify-content: flex-start;
+      }
+      .item {
+        .image-container {
+          background: #ffffff;
+          box-shadow: 0px 15px 30px rgba(232, 41, 116, 0.09);
+          border-radius: 15px;
+          margin-bottom: 22px;
+          height: 120px;
+          width: 120px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: auto;
+          margin-right: auto;
+          @media @lg {
+            margin-left: 0;
+            margin-right: 0;
+          }
+        }
+        .description {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.testimonials-section {
+  background-color: #f2f1fc;
+  background-image: url("../assets/testimonials-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .testimonials-container {
+    .testimonial {
+      padding-top: 100px;
+      padding-right: 48px;
+      display: flex;
+      .quote-image-container {
+        margin-right: 20px;
+        font-weight: 18px;
+      }
+      .description {
+        margin-bottom: 30px;
+      }
+      .name {
+        color: @primary-color;
+        font-family: "Sofia";
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+      }
+      .designation {
+        color: @primary-color;
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+.team-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .team-member-card-container {
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    @media @lg {
+      flex-direction: row;
+    }
+    .team-member-card {
+      margin: 10px;
+      background: #f8f7ff;
+      box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.12);
+      border-radius: 43px;
+      padding: 40px 48px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      @media @md {
+        flex-direction: row;
+      }
+      .profile-image {
+        height: 190px;
+        width: 190px;
+        min-height: 190px;
+        min-width: 190px;
+        border-radius: 50%;
+        @media @md {
+          margin-right: 38px;
+        }
+        background: linear-gradient(274.09deg, #e82974 0%, #f5887f 99.29%);
+        position: relative;
+        overflow: hidden;
+        .image {
+          top: 10px;
+          left: -8px;
+          position: absolute;
+          &.aarti {
+            top: -10px;
+            left: -2px;
+          }
+        }
+      }
+      .description {
+        margin-top: 24px;
+        @media @md {
+          margin-top: 0px;
+        }
+        .name {
+          color: @primary-color;
+          font-size: 22px;
+          line-height: 30px;
+          font-weight: bold;
+        }
+        .designation {
+          font-size: 18px;
+          line-height: 24px;
+          color: @primary-color;
+          font-weight: lighter;
+          margin-top: 4px;
+        }
+        .profile-btn {
+          margin-top: 24px;
+          color: #ffffff;
+          font-weight: 600;
+          background: linear-gradient(274.09deg, #e82974 0%, #f5887f 99.29%);
+          box-shadow: 0px 15px 30px rgba(232, 41, 116, 0.15);
+          border-radius: 12px;
+          padding: 16px 24px;
+          font-size: 14px;
+          line-height: 14px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: @primary-color;
+  color: white;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+}
