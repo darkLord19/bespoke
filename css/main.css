@@ -84,6 +84,24 @@ br {
 .banner-section .content .description b {
   color: white;
 }
+.banner-section .content .talk-to-us-btn {
+  margin-top: 24px;
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 600;
+  background: linear-gradient(274.09deg, #e82974 0%, #f5887f 99.29%);
+  box-shadow: 0px 15px 30px rgba(232, 41, 116, 0.15);
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 14px;
+  cursor: pointer;
+}
+.banner-section .content .talk-to-us-btn a {
+  display: block;
+  padding: 16px 48px;
+  color: white;
+  text-decoration: none;
+}
 .section-heading {
   text-align: center;
 }
@@ -321,10 +339,15 @@ br {
   background: linear-gradient(274.09deg, #e82974 0%, #f5887f 99.29%);
   box-shadow: 0px 15px 30px rgba(232, 41, 116, 0.15);
   border-radius: 12px;
-  padding: 16px 24px;
   font-size: 14px;
   line-height: 14px;
   cursor: pointer;
+}
+.team-section .team-member-card-container .team-member-card .description .profile-btn a {
+  display: block;
+  padding: 16px 24px;
+  color: white;
+  text-decoration: none;
 }
 .footer {
   background-color: #000000;
